@@ -16,7 +16,7 @@ export class CitiesService {
   }
 
   getCities(query: string): Observable<CityTypeaheadItem[]> {
-    return this.http.get<CityTypeaheadItem[]>('https://api.openweathermap.org/data/2.5/');   }
+    return this.http.get<CityTypeaheadItem[]>('assets/db/cities.json');   }
 
 
 // http://openweathermap.org/img/wn/${this.weather.icon}@2x.png
